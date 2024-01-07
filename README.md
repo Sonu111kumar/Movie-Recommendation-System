@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sonu111kumar&label=Profile%20views&color=0e75b6&style=flat" alt="sonu111kumar" /> </p>
 
-- 💬 Ask me about **HTML, CSS, C,MySQL Python**
+- 💬 Ask me about **HTML, CSS, C, MySQL, Python**
 
 - ⚡ Fun fact **I am funny.😂**
 
