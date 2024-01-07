@@ -1,99 +1,67 @@
-# Movie-Recommendation-System using Machine Learning.
-# ABSTRACT 
- Movie recommendation systems have transformed the way we explore and enjoy films in the digital age. This research paper provides an extensive analysis of movie recommendation systems, delving into their evolution, algorithmic techniques, data sources, challenges, ethical dimensions, applications in the film industry, and the promising future developments.
-  It highlights the filtering criteria in the recommender systems, algorithms implemented in movie recommender systems, the performance measurement criteria, the challenges in implementation, and recommendations for future research. Some of the most popular machine learning algorithms used in movie recommender systems such as K-means clustering, principal component analysis, and self-organizing maps with principal component analysis, cosine similarity.  This paper aims to offer a comprehensive understanding of the complexity and significance of movie recommendation systems. 
-Keyword: content-based-filtering, cosine similarity, Movie Recommendation.
 
-
-#                                1.	INTRODUCTION
- In an era characterized by an overwhelming abundance of information and choices, recommendation systems have emerged as indispensable tools to assist individuals in making decisions, whether it be selecting a movie to watch, a book to read, or a product to purchase. The exponential growth of digital content and e-commerce platforms has led to a demand for personalized recommendations that cater to users' specific preferences, thus enhancing their overall experience. Recommendation systems, also known as recommender systems, have become ubiquitous in our daily lives, shaping the way we interact with content and make choices. Recommender Systems produce recommendations, which the user can choose to accept or reject. The user can also give implicit or explicit input at any time, either right away or later on. The recommender database has the ability to retain user actions and comments, which can then be utilized to generate new recommendations during further user-system interactions. Some of the largest e-commerce companies (such as Amazon.com, snapdeal.com), as well as the online movie rental service Netflix, have made these recommender systems a prominent feature of their websites due to their economic potential
-#                                  2. HISTORICAL EVOLUTION 
-The roots of recommendation systems trace back to early collaborative filtering techniques, such as J. L. Herlocker's "MovieLens" system. The Netflix Prize in 2006 marked a significant milestone in the field by promoting collaborative filtering algorithms. Since then, recommendation systems have evolved from rule-based methods to machine learning and deep learning approaches. 
- 
- 
-  #                   3. TYPES OF  RECOMMENDATION SYSTEMS 
-
-Movie recommendation systems can be categorized based on their underlying techniques: 
-#                        3.1. Collaborative Filtering 
-Collaborative filtering encompasses several techniques: 
-•	User-based Collaborative Filtering:  Recommending movies based on the preferences of users with similar viewing histories. 
-•	Item-based Collaborative Filtering:  Suggesting movies similar to those previously liked by the user. 
-•	Matrix Factorization: Decomposing the user-movie interaction matrix to capture latent factors. 
-
-#                        1.2.	Content-Based Filtering 
-Content-based filtering is a recommendation system technique used to suggest items to users based on the properties and characteristics of the items themselves, as well as the user's past behavior or preferences. This approach is commonly used in various recommendation systems, including those that recommend movies, books, products, and more.
-
-#                        1.3.	Hybrid Recommendation Systems  
-A hybrid recommendation system is a type of recommendation system that combines two or more different recommendation approaches to provide more accurate and diverse recommendations. These approaches are typically collaborative filtering, content-based filtering, and sometimes other techniques, such as knowledge-based or context-aware recommendation methods. The goal of a hybrid recommendation system is to leverage the strengths of each approach while mitigating their individual weaknesses.
+# Movie Recommendation System with Content-Based Filtering
 
 
 
 
-#                         4.	RESEARCH METHODOLOGY
+## Overview
+This GitHub repository contains a movie recommendation system implemented using machine learning with content-based filtering. Content-based filtering recommends items based on the features of the items and the preferences of the user. In this case, the system recommends movies to users based on the content/features of the movies they have liked or interacted with.
+## Features
 
-#                         4.1	 Similarity Technique
-      Cosine similarity is a metric, helpful in determining, how similar the data objects are irrespective of their size. We can measure the similarity between two sentences in Python using Cosine Similarity. In cosine similarity, data objects in a dataset are treated as a vector. The formula to find the cosine similarity between two vectors is –
-
- (x, y) = x . y / ||x||   ||y||
-
-           where
-•	x . y = product (dot) of the vectors ‘x’ and ‘y’.
-•	||x|| and ||y|| = length (magnitude) of the two vectors ‘x’ and ‘y’.
-•	||x||   ||y|| = regular product of the two vectors ‘x’ and ‘y’.
-
-•	The cosine similarity between two vectors is measured in ‘θ’.
-•	If θ = 0°, the ‘x’ and ‘y’ vectors overlap, thus proving they are similar.
-•	If θ = 90°, the ‘x’ and ‘y’ vectors are dissimilar.
-
- 
-Cosine Similarity between two vectors
-#                              4.2 Movie Recommendation System is divided into 4 modules:
-
-1.	Dataset - Provide dataset (By this, we mean that the collected data should be uniform and understandable for a machine that doesn't see data in the same way that people do.)
-Analytics for every dataset (i.e movies dataset, credits dataset) has helped to understand user-item interactions for movie recommendation.
-2.	Pre-processing – A real-world data generally contains noises, missing values, and maybe in a format which cannot be directly used for machine learning models. Data pre cleaning the data and making it suitable for a machine learning model which also increases the accuracy and efficiency of a machine learning model.
-
-	Null values treatment- We served with two dataset (i.e  movies dataset, credits dataset). We got null values in movies dataset (features are budget, homepage, id genres, overview, keywords, title, revenue). Credits dataset doesn’t contain any null values.
-
-	Dropping and replacing data- Proceeding with data cleaning and feature selection is a crucial steps – we dropped feature like budget, homepage, revenue. Replaced feature with lowercase and ‘-‘ to built a space between words. Some of the null values were present in feature data, we replaced with mean of that particular feature. Only considering age between 5 90 we took users data to analysis and perform recommendation on it.       
+- Content-Based Filtering: The recommendation system uses the content of the movies, such as genres, keywords, and other relevant features, to make personalized recommendations for users.
+- Movie Database: The system utilizes a comprehensive movie database to gather information about various movies.
+- User Interactions: Users can input their preferences, such as liked movies, and the system will provide recommendations based on those preferences.
 
 
 
 
+## Requirements
+- Python 3.x
+- Dependencies listed in requirements.txt. Install them using:
 
-	
+              pip install -r requirements.txt
+## Getting Started
+1. Clone the repository:
 
-	
+git clone https://github.com/your-username/movie-recommendation-system.git
 
+2. Navigate to the project directory:
 
+                cd movie-recommendation-system
+
+3. Install the required dependencies:
+
+                pip install -r requirements.txt
+
+4. Run the recommendation system:
+
+                  streamlit run app.py
+
+5. Follow the on-screen instructions to input your movie preferences and receive personalized recommendations.
+## Dataset
+The system uses the tmdb_5000_movies dataset for training and testing the recommendation algorithm. Make sure to download and preprocess the dataset before running the system.
                 
+## Usage
+- Input your liked movies and preferences.
+- Receive personalized movie recommendations based on content-based filtering.
+## Contribution
+Feel free to contribute to the project by opening issues, suggesting enhancements, or submitting pull requests. Follow the contribution guidelines for more details
+## License
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
 
-	
+
+
+## Acknowledgements
+
+ - The project was inspired by the idea of building a movie recommendation system using content-based filtering.
+
+ - Special thanks to the tmdb_5000_movies dataset for providing the necessary data.
+
+Happy movie watching! 🎬
 
 
 
 
 
-3.	Training and Testing-Training data is the data you use to train an algorithm or machine learning model to predict the outcome you design your model to predict with help of test data test your model. you can evaluate the performance and progress.
 
-4.	Content based filtering - Content-based filtering is a recommendation system technique used to suggest items to users based on the properties and characteristics of the items themselves, as well as the user's past behavior or preferences. This approach is commonly used in various recommendation systems, including those that recommend movies, books, products, and more.
-
-  
- 
-#                                               7. CONCLUSION 
- 
-Movie recommendation systems have revolutionized the film industry and how audiences discover and engage with movies. While these systems offer numerous benefits, it is imperative to address ethical concerns related to user privacy and fairness. The future of movie recommendation systems holds the promise of more advanced, interpretable, and ethical models that will continue to shape the entertainment industry. 
- 
-  
- 
- 
-  
- 
- 
- 
- 
- 
- 
-  
- 
 
