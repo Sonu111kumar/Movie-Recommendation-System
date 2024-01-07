@@ -78,22 +78,7 @@ Analytics for every dataset (i.e movies dataset, credits dataset) has helped to 
 
 4.	Content based filtering - Content-based filtering is a recommendation system technique used to suggest items to users based on the properties and characteristics of the items themselves, as well as the user's past behavior or preferences. This approach is commonly used in various recommendation systems, including those that recommend movies, books, products, and more.
 
-  #                    5.  APPLICATIONS IN THE FILM INDUSTRY 
- 
-Movie recommendation systems have extensive applications within the film industry, including: 
-Streaming Platforms:  Enhancing user experience on platforms like Netflix, Amazon Prime Video, and Hulu. 
-Movie Theaters: Suggesting films for users to watch in theaters. 
-Film Studios: Utilizing recommendation systems for marketing and distribution strategies. 
-Film Festivals: Recommending movies for festival attendees to maximize their experience. 
- 
- 
- #                                        6.  FUTURE DIRECTIONS 
- 
-The future of movie recommendation systems holds the promise of exciting developments: 
-Advanced Deep Learning Models:  Leveraging deep learning to better understand and predict user preferences. 
-Interpretable Models:  Developing recommendation systems that are more transparent and user-friendly. 
-Enhanced Privacy-Preserving Techniques:  Innovations in preserving user privacy while delivering personalized recommendations. 
-Ethical and Regulatory Frameworks:  Establishing guidelines and regulations for responsible movie recommendation system design. 
+  
  
 #                                               7. CONCLUSION 
  
