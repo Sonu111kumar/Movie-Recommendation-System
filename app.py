@@ -2,18 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-# import streamlit.components.v1 as com
-# import flask
-# from flask import Flask,render_template
-
-# app = Flask(__name__)
-#
-# @app.route('/')
-# def index():
-#  return (render_template('test-1.html'))
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 
 def fetch_poster(movie_id):
